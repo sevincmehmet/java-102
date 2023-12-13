@@ -1,5 +1,5 @@
 package kalıtım;
-// KAZANIMLAR: miras (Inheritance), aşırı yüklenme (Overloading), geçersiz kılma (Override)
+// KAZANIMLAR: miras (Inheritance), aşırı yüklenme (Overloading), geçersiz kılma (Override), çok biçimcilik (Polimorfizm)
 
 public class Main {
     public static void main(String[] args) {
