@@ -15,4 +15,9 @@ public class OgretimGorevlisi extends Akademisyen{
     public void setKapiNo(int kapiNo) {
         this.kapiNo = kapiNo;
     }
+
+    @Override // abstract olarak belirlediğim üst sınıflardaki metotları alt sınıflarda override olarak belirtmek gereklidir
+    public void derseGir(String dersSaati) {
+        System.out.println(getAdSoyad() + " " + dersSaati + " saatinde dersse girdi");
+    }
 }

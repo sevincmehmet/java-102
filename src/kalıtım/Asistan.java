@@ -15,4 +15,14 @@ public class Asistan extends Akademisyen{
     public void setOfisSaati(String ofisSaati) {
         this.ofisSaati = ofisSaati;
     }
+
+    @Override
+    public void giris(String girisSaati) {
+        System.out.println(girisSaati);
+    }
+
+    @Override
+    public void derseGir(String dersSaati) {
+        System.out.println(dersSaati);
+    }
 }

@@ -1,6 +1,6 @@
 package kalıtım;
 
-public class Akademisyen extends Calisan{
+public abstract class Akademisyen extends Calisan{
     private String bolum, unvan;
 
     public Akademisyen(String adSoyad, String telefon, String eposta,String bolum, String unvan) {
@@ -25,9 +25,7 @@ public class Akademisyen extends Calisan{
         this.unvan = unvan;
     }
 
-    public void derseGir() {
-        System.out.println(this.getAdSoyad() + " derse girdi !!");
-    }
+    public abstract void derseGir(String dersSaati); // parametresiz de çalışır
 
     // Bazen alt sınıflarım içersinde üst metottan bağımsız çalışmasını isteyeceğim aynı isimde metotlarım olsun isterim bunun için java bize Override özelliğini sunmustur
     // Her yerde tek tek değiştirmek yerine tek yerde değişiklik sağlayabiliriz.

@@ -1,6 +1,6 @@
 package kalıtım;
 
-public class Memur extends Calisan {
+public abstract class Memur extends Calisan {
     public String departman;
     public String mesai;
 
