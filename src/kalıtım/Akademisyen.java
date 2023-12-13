@@ -28,4 +28,13 @@ public class Akademisyen extends Calisan{
     public void derseGir() {
         System.out.println(this.getAdSoyad() + " derse girdi !!");
     }
+
+    // Bazen alt sınıflarım içersinde üst metottan bağımsız çalışmasını isteyeceğim aynı isimde metotlarım olsun isterim bunun için java bize Override özelliğini sunmustur
+    // Her yerde tek tek değiştirmek yerine tek yerde değişiklik sağlayabiliriz.
+    // OVERRIDE (ezme)
+
+    @Override // programcıya info vermek için var yazmazsan da çalısır ama yaz
+    public void giris() {
+        System.out.println(getAdSoyad() + " adlı akademisyen üniversiteye giriş yaptı");
+    }
 }

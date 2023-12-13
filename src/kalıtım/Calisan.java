@@ -33,10 +33,19 @@ public class Calisan {
         this.eposta = eposta;
     }
 
+    // Aynı isme sahip ancak birine parametre verirsek sorunsuz çalısır çalıştırırken parametreli veya parametresiz olarak çağırabilirsiniz.
+    // METHOD OVERLOADİNG (metotlarda aşırı yüklenme)
     public void giris() {
         System.out.println(this.adSoyad + " üniversiteye giriş yaptı !!");
     }
 
+    public void giris(String girisSaati) {
+        System.out.println(this.adSoyad + " " + girisSaati +" saatinde üniversiteye giriş yaptı !!");
+    }
+
+    public void giris(String girisSaati, String cikisSaati) {
+        System.out.println(this.adSoyad + " " + girisSaati +" saatinde üniversiteye giriş yaptı " + cikisSaati + " saatinde çıkacaktır !!");
+    }
     public void cikis() {
         System.out.println(this.adSoyad + " üniversiteden çıkış yaptı !!");
     }
